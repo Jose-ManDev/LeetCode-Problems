@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="font-size: 16px">
+      <ol style="list-style-type: lower-latin">
+        <li style="margin-bottom: 1em">
+          <h3 style="font-size: 1.1em; font-weight: 600">
+            ¿Cuál es la diferencia entre constante y variable?
+          </h3>
+          <p style="margin-bottom: 1em">
+            <span style="font-weight: 600">Constantes:</span>
+            Las constantes son lugares de memoria que no pueden ser cambiados
+            una vez han sido definidosy pueden ser de todos los tipos.
+          </p>
+          <p style="margin-bottom: 1em">
+            <span style="font-weight: 600">Variables:</span>
+            Las variables, al igual que las constantes son lugares de memoria,
+            pero a diferencia de estas pueden ser reasignadas en cualquier
+            momento a un valor del mismo tipo que fueron declaradas.
+          </p>
+        </li>
+        <li style="margin-bottom: 1em">
+          <h3 style="font-size: 1.1em; font-weight: 600">
+            En el lenguaje C, ¿cómo se definen las constantes y las variables?
+          </h3>
+          <p style="margin-bottom: 1em">
+            Las constantes se definen de la siguiente manera:
+          </p>
+          <div
+            style="
+              display: block;
+              margin: 0em 2em;
+              padding: 1em;
+              border-radius: 0.5em;
+              background-color: #282c34;
+              color: #abb2bf;
+              line-height: 1.5em;
+              font-family: monospace;
+            "
+          >
+            <span style="color: #56b6c2">#include</span>
+            &lt;stdio.h&gt;<br /><br />
+            <span style="color: #5c6370"
+              >// Declarar una constante usando define</span
+            ><br />
+            <span style="color: #56b6c2">#define</span>
+            <span style="color: #61afef">constant1</span>
+            <span style="color: #d19a66">10</span><br />
+            <span style="color: #c678dd">int</span>
+            <span style="color: #61afef">main</span>() {<br />
+            &emsp;&emsp;<span style="color: #5c6370"
+              >// Declarar una constante usando const</span
+            ><br />
+            &emsp;&emsp;<span style="color: #c678dd">const</span>
+            <span style="color: #c678dd">int</span>
+            <span style="color: #61afef">constant2</span> =
+            <span style="color: #d19a66">10</span>;<br />
+            }
+          </div>
+          <p>Las variables se definen de la siguiente manera:</p>
+          <div
+            style="
+              display: block;
+              margin: 0em 2em;
+              padding: 1em;
+              border-radius: 0.5em;
+              background-color: #282c34;
+              color: #abb2bf;
+              line-height: 1.5em;
+              font-family: monospace;
+            "
+          >
+            <span style="color: #56b6c2">#include</span>
+            &lt;stdio.h&gt;<br /><br />
+            <span style="color: #c678dd">int</span>
+            <span style="color: #61afef">main</span>() {<br />
+            &emsp;&emsp;<span style="color: #5c6370"
+              >// Declaración de una variable</span
+            ><br />
+            &emsp;&emsp;<span style="color: #c678dd">int</span>
+            <span style="color: #61afef">var1</span>;<br />
+            &emsp;&emsp;<span style="color: #5c6370"
+              >// Asignación de la variable</span
+            ><br />
+            &emsp;&emsp;<span style="color: #61afef">var1</span> =
+            <span style="color: #d19a66">10</span>;<br /><br />
+            &emsp;&emsp;<span style="color: #5c6370"
+              >// Declaración y asignación de una variable</span
+            ><br />
+            &emsp;&emsp;<span style="color: #c678dd">float</span>
+            <span style="color: #61afef">var2</span> =
+            <span style="color: #d19a66">2.5</span>;<br /><br />
+            &emsp;&emsp;<span style="color: #5c6370"
+              >// Declarar varias variables</span
+            ><br />
+            &emsp;&emsp;<span style="color: #c678dd">char</span>
+            <span style="color: #61afef">var3</span>,
+            <span style="color: #61afef">var4</span>,
+            <span style="color: #61afef">var5</span>;<br />
+            }
+          </div>
+        </li>
+        <li style="margin-bottom: 1em">
+          <h3 style="font-size: 1.1em; font-weight: 600">
+            Independientemente del lenguaje de programación, ¿cuáles son los
+            tipos de datos que existen?
+          </h3>
+          <p style="margin-bottom: 1em">
+            Estos son los tipos de datos que existen:
+          </p>
+          <ul>
+            <li>Entero o <span style="font-style: italic">int</span></li>
+            <li>Flotante o <span style="font-style: italic">float</span></li>
+            <li>Doble o <span style="font-style: italic">double</span></li>
+            <li>Carácter o <span style="font-style: italic">char</span></li>
+            <li>Booleano o <span style="font-style: italic">boolean</span></li>
+            <li>Vacío o <span style="font-style: italic">void</span></li>
+          </ul>
+          <p style="margin-bottom: 1em">
+            Algunos lenguajes también manejan el tipo string o cadena o los
+            números complejos
+          </p>
+        </li>
+        <li style="margin-bottom: 1em">
+          <h3 style="font-size: 1.1em">
+            En lenguaje C, ¿cuáles son los tipos de datos simples?
+          </h3>
+          <p style="margin-bottom: 1em">
+            En lenguaje C, estos son los datos simples o primitivos:
+          </p>
+          <table
+            style="
+              width: 100%;
+              border-radius: 0.5em;
+              overflow: hidden;
+              table-layout: fixed;
+              border: 1px solid #5c6370;
+              margin-bottom: 1em;
+            "
+          >
+            <colgroup>
+              <col style="width: 15%" />
+              <col style="width: 50%" />
+              <col style="width: 35%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th
+                  style="
+                    padding: 0 1em;
+                    background-color: #282c34;
+                    color: #abb2bf;
+                  "
+                >
+                  Tipo
+                </th>
+                <th
+                  style="
+                    padding: 0 1em;
+                    background-color: #282c34;
+                    color: #abb2bf;
+                    width: 60%;
+                  "
+                >
+                  Descripción
+                </th>
+                <th
+                  style="
+                    padding: 0 1em;
+                    background-color: #282c34;
+                    color: #abb2bf;
+                  "
+                >
+                  Ejemplo
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="padding: 0 0.25em; border-bottom: #5c6370">
+                <td>Entero</td>
+                <td>
+                  El tipo entero se usa para representar números enteros (es
+                  decir, sin parte decima) y se usa mediante la palabra clave
+                  <span style="font-family: monospace; font-weight: 600"
+                    >int</span
+                  >
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: block;
+                      margin: 0em 0.25em;
+                      padding: 0.75em;
+                      border-radius: 0.5em;
+                      background-color: #282c34;
+                      color: #abb2bf;
+                      line-height: 1.5em;
+                      font-family: monospace;
+                    "
+                  >
+                    <span style="color: #c678dd">int</span>
+                    <span style="color: #61afef">age</span> =
+                    <span style="color: #d19a66">30</span>;
+                  </div>
+                </td>
+              </tr>
+              <tr style="padding: 0 0.25em; border-bottom: #5c6370">
+                <td>Carácter</td>
+                <td>
+                  El tipo carácter se usa para representar caracteres ASCII,
+                  estos se pueden usar mediante la palabra clave
+                  <span style="font-family: monospace; font-weight: 600"
+                    >char</span
+                  >
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: block;
+                      margin: 0em 0.25em;
+                      padding: 0.75em;
+                      border-radius: 0.5em;
+                      background-color: #282c34;
+                      color: #abb2bf;
+                      line-height: 1.5em;
+                      font-family: monospace;
+                    "
+                  >
+                    <span style="color: #c678dd">char</span>
+                    <span style="color: #61afef">initialLetter</span> =
+                    <span style="color: #98c379">'J'</span>;
+                  </div>
+                </td>
+              </tr>
+              <tr style="padding: 0 0.25em; border-bottom: #5c6370">
+                <td>Punto flotante</td>
+                <td>
+                  Es usado para representar números reales, es decir, aquellos
+                  con parte decimal. Se usa mediante la palabra clave
+                  <span style="font-family: monospace; font-weight: 600"
+                    >float</span
+                  >
+                  o
+                  <span style="font-family: monospace; font-weight: 600"
+                    >double</span
+                  >, el cual ocupa el doble de memoria pero da más precisión
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: block;
+                      margin: 0em 0.25em;
+                      padding: 0.75em;
+                      border-radius: 0.5em;
+                      background-color: #282c34;
+                      color: #abb2bf;
+                      line-height: 1.5em;
+                      font-family: monospace;
+                    "
+                  >
+                    <span style="color: #c678dd">float</span>
+                    <span style="color: #61afef">price</span> =
+                    <span style="color: #d19a66">24.55</span>;
+                  </div>
+                </td>
+              </tr>
+              <tr style="padding: 0 0.25em; border-bottom: #5c6370">
+                <td>Vacío</td>
+                <td>
+                  Si bien este no es un tipo como tal, es usado para indicar que
+                  una función no regresa ningún valor mediante la palabra clave
+                  <span style="font-family: monospace; font-weight: 600"
+                    >void</span
+                  >
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: block;
+                      margin: 0em 0.25em;
+                      padding: 0.75em;
+                      border-radius: 0.5em;
+                      background-color: #282c34;
+                      color: #abb2bf;
+                      line-height: 1.5em;
+                      font-family: monospace;
+                    "
+                  >
+                    <span style="color: #c678dd">void</span>
+                    <span style="color: #61afef">myFunction</span>() { ... }
+                  </div>
+                </td>
+              </tr>
+              <tr style="padding: 0 0.25em; border-bottom: #5c6370">
+                <td>Lógico o booleano</td>
+                <td>
+                  Este no es un tipo nativo de C y para usarlo se debe de
+                  agregar importar una biblioteca usando
+                  <span style="font-family: monospace; font-weight: 600"
+                    >#include &lt;stdbool.h&gt;</span
+                  >
+                  . Se puede usar mediante la palabra clave
+                  <span style="font-family: monospace; font-weight: 600"
+                    >bool</span
+                  >
+                </td>
+                <td>
+                  <div
+                    style="
+                      display: block;
+                      margin: 0em 0.25em;
+                      padding: 0.75em;
+                      border-radius: 0.5em;
+                      background-color: #282c34;
+                      color: #abb2bf;
+                      line-height: 1.5em;
+                      font-family: monospace;
+                    "
+                  >
+                    <span style="color: #c678dd">bool</span>
+                    <span style="color: #61afef">isArrayEmpty</span> =
+                    <span style="color: #e5c07b">true</span>;
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li style="margin-bottom: 1em">
+          <h3 style="font-size: 1.1em">
+            Describe cinco bibliotecas del lenguaje C
+          </h3>
+          <table
+            style="
+              width: 100%;
+              border-radius: 0.5em;
+              overflow: hidden;
+              table-layout: fixed;
+              border: 1px solid #5c6370;
+              margin-bottom: 1em;
+            "
+          >
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 80%" />
+            </colgroup>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding: 0.5em 1em;
+                  background-color: #282c34;
+                  color: #abb2bf;
+                  font-weight: 600;
+                  font-size: 1.15em;
+                "
+                colspan="2"
+              >
+                Biblioteca:
+                <span style="font-family: monospace">stdio.h</span>
+              </td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Descripción
+              </td>
+              <td>
+                Esta biblioteca proporciona una amplia gama de funciones de
+                entrada/salida en C, ya sea en pantalla o en archivos.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">printf</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em">
+                Esta función toma una cadena de formato y argumentos opcionales
+                para generar una cadena con formato para la salida.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">scanf</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función se usa para obtener una entrada del usuario a
+                través del teclado y la almacena en la variable especificada.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">fopen</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función abre el archivo de la ruta dada. No es una función
+                segura por lo que no se realiza una validación al archivo antes
+                de abrirlo.
+              </td>
+            </tr>
+          </table>
+          <table
+            style="
+              width: 100%;
+              border-radius: 0.5em;
+              overflow: hidden;
+              table-layout: fixed;
+              border: 1px solid #5c6370;
+              margin-bottom: 1em;
+            "
+          >
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 80%" />
+            </colgroup>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding: 0.5em 1em;
+                  background-color: #282c34;
+                  color: #abb2bf;
+                  font-weight: 600;
+                  font-size: 1.15em;
+                "
+                colspan="2"
+              >
+                Biblioteca:
+                <span style="font-family: monospace">stdlib.h</span>
+              </td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Descripción
+              </td>
+              <td>
+                Esta biblioteca proporciona una amplia gama de funciones para la
+                gestión de memoria, el control de procesos y otros usos.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">rand</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em">
+                Esta función genera un número entero pseudo-aleatorio, no es
+                criptográficamente segura.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">malloc</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función reserva un espacio de memoria del número de bytes
+                que se le pide.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">abort</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función termina la ejecución del programa inmediatamente,
+                no acepta parámetros.
+              </td>
+            </tr>
+          </table>
+          <table
+            style="
+              width: 100%;
+              border-radius: 0.5em;
+              overflow: hidden;
+              table-layout: fixed;
+              border: 1px solid #5c6370;
+              margin-bottom: 1em;
+            "
+          >
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 80%" />
+            </colgroup>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding: 0.5em 1em;
+                  background-color: #282c34;
+                  color: #abb2bf;
+                  font-weight: 600;
+                  font-size: 1.15em;
+                "
+                colspan="2"
+              >
+                Biblioteca:
+                <span style="font-family: monospace">string.h</span>
+              </td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Descripción
+              </td>
+              <td>
+                Esta biblioteca proporciona una amplia gama de funciones para la
+                manipulación de cadenas de caracteres, además de la definición
+                de macros, constantes, tipos y algunas funciones para manipular
+                memoria.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">strcat</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em">
+                Esta función concatena dos cadenas de texto dadas.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">memcpy</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función copia n bytes de un buffer de memoria a otro, los
+                buffer no pueden solaparse.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">strlen</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función devuelve la longitud de una cadena de texto, es
+                decir, cuantos caracteres tiene.
+              </td>
+            </tr>
+          </table>
+          <table
+            style="
+              width: 100%;
+              border-radius: 0.5em;
+              overflow: hidden;
+              table-layout: fixed;
+              border: 1px solid #5c6370;
+              margin-bottom: 1em;
+            "
+          >
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 80%" />
+            </colgroup>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding: 0.5em 1em;
+                  background-color: #282c34;
+                  color: #abb2bf;
+                  font-weight: 600;
+                  font-size: 1.15em;
+                "
+                colspan="2"
+              >
+                Biblioteca:
+                <span style="font-family: monospace">math.h</span>
+              </td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Descripción
+              </td>
+              <td>
+                Esta biblioteca proporciona una amplia gama de funciones para
+                operaciones matemáticas básicas, muchas de sus funciones
+                incluyen el uso de números con coma flotante.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">cos</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em">
+                Esta función calcula el coseno del valor dado en radianes.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">floor</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función regresa el número entero más cercano sin pasarse al
+                valor dado. Si le pasamos 2.8 esta regresará el valor 2.0000.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">pow</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función eleve un valor dado a la potencia dada.
+              </td>
+            </tr>
+          </table>
+          <table
+            style="
+              width: 100%;
+              border-radius: 0.5em;
+              overflow: hidden;
+              table-layout: fixed;
+              border: 1px solid #5c6370;
+              margin-bottom: 1em;
+            "
+          >
+            <colgroup>
+              <col style="width: 20%" />
+              <col style="width: 80%" />
+            </colgroup>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding: 0.5em 1em;
+                  background-color: #282c34;
+                  color: #abb2bf;
+                  font-weight: 600;
+                  font-size: 1.15em;
+                "
+                colspan="2"
+              >
+                Biblioteca:
+                <span style="font-family: monospace">time.h</span>
+              </td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Descripción
+              </td>
+              <td>
+                Esta biblioteca proporciona una amplia gama de funciones que
+                sirven para manipular y dar formato a la hora y fecha del
+                sistema.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">clock</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em">
+                Esta función cuenta el número de pulsos desde que se inició un
+                proceso y los devuelve.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">
+                difftime
+              </td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función devuelve la diferencia entre dos variables de
+                tiempo en segundos.
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                "
+              >
+                Función
+              </td>
+              <td style="font-family: monospace; padding-left: 1em">time</td>
+            </tr>
+            <tr
+              style="overflow: hidden; border-bottom: 0.25em solid transparent"
+            >
+              <td
+                style="
+                  padding-left: 1em;
+                  background-color: #282c34;
+                  font-weight: 600;
+                  color: #abb2bf;
+                  border-bottom-left-radius: 0.5em;
+                "
+              >
+                Objetivo
+              </td>
+              <td style="padding-left: 1em; margin-bottom: 0.25em">
+                Esta función devuelve la hora y fecha actual o -1 si no es
+                posible.
+              </td>
+            </tr>
+          </table>
+        </li>
+        <li style="margin-bottom: 1em">
+          <h3 style="font-size: 1.1em">
+            En C, ¿por qué es importante utilizar el tipo de variable correcto y
+            por qué es importante utilizar bibliotecas?
+          </h3>
+          <p style="margin-bottom: 1em">
+            A la hora de trabajar con datos en C es importante usar el tipo de
+            variable correcto porque el tipo de variable determina el rango y la
+            precisión de los valores que se almacenan en ella, así como las
+            operaciones que se pueden realizar en ellos.
+          </p>
+          <p style="margin-bottom: 1em">
+            Al usar el tipo de variable equivocado se pueden provocar errores
+            que incluyen resultados poco precisos o incluso incorectos. Además,
+            el uso de los tipos de variable incorrectos puede consumir más
+            memoria de la necesaria, lo que puede ralentizar el rendimiento del
+            programa.
+          </p>
+          <p style="margin-bottom: 1em">
+            Uno de los problemas más comunes al escoger un tipo de variable
+            incorrecto es el llamado <b>desbordamiento</b>. "El desbordamiento
+            es la condición que se da cuando una operación aritmética, excede el
+            tamaño máximo del tipo de variable usado para almacenarlo. Cuando el
+            desbordamiento sucede, el valor interpretado parecerá como si le
+            hubiese dado la vuelta y empezado desde el valor mínimo" (Dietz et
+            al., 2015).
+          </p>
+          <p style="margin-bottom: 1em">
+            Igualmente, a la hora de programar las librerías nos dan una serie
+            de ventajas que no debemos de olvidar. Una de sus principales
+            ventajas es la reutilización de código, ya que en vez de programar
+            nuestra propia implementación podemos usar una función que ya
+            existe. Esto nos ahorra tiempo y recursos a la hora de desarrollar
+            software, además, normalmente las funciones dentro de una librería
+            superarán lo que sea que uno programe.
+          </p>
+        </li>
+      </ol>
+
+      <h3 style="font-size: 1.1em; font-weight: 600">Biblografía</h3>
+
+      <ul style="list-style: none">
+        <li style="margin-bottom: 1em">
+          W. (s.&nbsp;f.).
+          <i style="letter-spacing: 0.3px"
+            >Microsoft Learn: adquirir conocimientos que le abran las puertas en
+            su carrera profesional</i
+          ><span style="letter-spacing: 0.3px"
+            >. https://learn.microsoft.com/es-es/</span
+          >
+        </li>
+        <li style="margin-bottom: 1em">
+          Dietz, W., Li, P., Regehr, J., &amp; Adve, V. (2015). Understanding
+          Integer Overflow in C/C++.
+          <i>ACM Transactions on Software Engineering and Methodology</i>,
+          <i>25</i>(1), 1-29. https://doi.org/10.1145/2743019
+        </li>
+        <li>
+          Thomas, D., &amp; Hunt, A. (2019).
+          <i
+            >The Pragmatic Programmer: Your Journey to Mastery, 20th Anniversary
+            Edition</i
+          >
+          (2nd ed.). Addison-Wesley Professional.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
